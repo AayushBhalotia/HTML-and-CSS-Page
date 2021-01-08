@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+</head>
+
+<body>
+  <header>
+    <div class="maxheader">
+      <div class="header-main">
+        <div class="logo">
+          <img src="../assets/images/beroe-live-logo.png" alt="Beore" />
+        </div>
+        <div class="header-right">
+          <div class="rectangle-top" id="rectangle-top">
+            <input type="text" id="bar" class="input" placeholder="Search" />
+            <div>
+              <img class="search" id="search" src="../assets/images/search-white.png" alt="search-purple" />
+            </div>
+          </div>
+
+          <div class="notification">
+            <img src="../assets/images/notification-icon.png" class="noti-icon" />
+          </div>
+          <div class="usermain">
+            <div class="Oval-3"></div>
+            <div class="user">Hi John!</div>
+          </div>
+          <div class="askbeoremain">
+            <div class="askbeorepng">
+              <img src="../assets/images/ask-beroe.png" alt="ask-beroe" />
+            </div>
+            <div class="askbeore">
+              <p>Ask Beore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="subheader">
+        <div class="subheader-left">
+          <div class="nav active">
+            <p>Dashboard</p>
+          </div>
+          <div class="nav">
+            <p>Discussions</p>
+          </div>
+          <div class="nav">
+            <p>Interesting Reads</p>
+          </div>
+        </div>
+        <div class="nav" style="margin-right: 2em">
+          <p>Customised Reports</p>
+        </div>
+      </div>
+    </div>
+    <div class="mobileheader">
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Discussions</a>
+        <a href="#">Interesting Reads</a>
+        <a href="#">Customised Reports</a>
+      </div>
+
+      <div class="upper">
+        <div class="hamburger">
+          <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+        <div class="logo2">
+          <img src="../assets/images/beroe-live-logo.png" alt="Beore" />
+        </div>
+      </div>
+      <div class="lower" id="lower">
+        <div class="mobilesubheader">
+          <div style="display: flex" id="op">
+            <input class="mobile-input" type="text" id="mobile-input" placeholder="Search" />
+
+            <div class="mobile-searchbtn">
+              <img id="mobile-searchbtn" src="../assets/images/search-white.png" alt="search-white" />
+            </div>
+          </div>
+          <div class="mobile-notification">
+            <img src="../assets/images/notification-icon.png" alt="" />
+          </div>
+          <div class="oval"></div>
+          <div class="mobile-askbeore">
+            <img src="../assets/images/ask-beroe.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content" id="modalcontent">
+      <div><span class="close">&times;</span></div>
+      <div>
+        <p>Hola, Weekend is coming!</p>
+      </div>
+    </div>
+  </div>
+  <div class="rest-body">
+    <div class="section1">
+      <div class="section1-left">
+        <img class="city-image" src="../assets/images/city.jpeg" width="600px" height="450px" alt="city" />
+      </div>
+      <div class="section1-right">
+        <div style="padding-left: 1.5em">
+          <p class="marketing" style="margin-top: 0.5em">
+            MARKETING MATERIALS
+          </p>
+          <div class="subsection-right">
+            <div class="comm">
+              Commercial & <br />
+              Reminder Items
+            </div>
+            <div class="caret-circle">
+              <img style="cursor: pointer" id="dropbtn" onclick="dropdown()"
+                src="../assets/images/caret-circle-white.svg" />
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="icons1">
+            <img class="star" src="../assets/images/star-copy-6.svg" alt="" />
+            <img class="star" src="../assets/images/star-copy-6.svg" alt="" />
+            <img class="star" src="../assets/images/star-copy-6.svg" alt="" />
+            <img class="star" src="../assets/images/star-copy-6.svg" alt="" />
+            <img class="star" src="../assets/images/star-copy-7.svg" alt="" />
+            <img class="share" src="../assets/images/share-icon.svg" alt="" />
+            <img class="share" src="../assets/images/clipboard-icon.svg" alt="" />
+          </div>
+        </div>
+        <div class="sections">
+          <div class="table-head">SECTIONS</div>
+          <table>
+            <tr>
+              <td>Excecutive Summary</td>
+              <td>Excecutive Summary</td>
+            </tr>
+            <tr>
+              <td>Market Analysis</td>
+              <td>Market Analysis</td>
+            </tr>
+            <tr>
+              <td>Supplier Analysis</td>
+              <td>Supplier Analysis</td>
+            </tr>
+            <tr>
+              <td>Cost Pricing Analysis</td>
+              <td>Cost Price Analysis</td>
+            </tr>
+            <tr>
+              <td>Procurement Best Practices</td>
+              <td>Procurement Best Practices</td>
+            </tr>
+            <tr>
+              <td>Procurement for Dummies</td>
+              <td>More</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="section1-footer">
+      <div class="content">
+        For DEEPER INSIGHTS in a category, request for a
+        <p style="
+              color: #5d52a8;
+              padding-left: 5px;
+              font-weight: 600;
+              cursor: pointer;
+            ">
+          Customised Report.
+        </p>
+      </div>
+      <div class="purplerectangle">
+        <div class="rectangle">
+          <div>Get Customised Report</div>
+        </div>
+      </div>
+    </div>
+    <div class="section2">
+      <p style="margin-right: 1em">INDICES</p>
+      <hr />
+    </div>
+    <div class="section3">
+      <div class="mySlides fade">
+        <div class="data">
+          <div class="demo">
+            <div class="add">
+              Facilities Management - Market Size Estimate - Europe, North
+              America and MEA
+            </div>
+          </div>
+          <div class="bars">
+            <div class="Rectangle-12"></div>
+            <div class="Rectangle-12-Copy-3"></div>
+            <div class="Rectangle-12-Copy"></div>
+            <div class="Rectangle-12-Copy-4"></div>
+            <div class="Rectangle-12-Copy-2"></div>
+            <div class="Rectangle-12-Copy-5"></div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="demo">
+            <div class="add">
+              Facilities Management - Market Size Estimate - Europe, North
+              America and MEA
+            </div>
+          </div>
+          <div class="bars">
+            <div class="Rectangle-12"></div>
+            <div class="Rectangle-12-Copy-3"></div>
+            <div class="Rectangle-12-Copy"></div>
+            <div class="Rectangle-12-Copy-4"></div>
+            <div class="Rectangle-12-Copy-2"></div>
+            <div class="Rectangle-12-Copy-5"></div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="demo">
+            <div class="add">
+              Facilities Management - Market Size Estimate - Europe, North
+              America and MEA
+            </div>
+          </div>
+          <div class="bars">
+            <div class="Rectangle-12"></div>
+            <div class="Rectangle-12-Copy-3"></div>
+            <div class="Rectangle-12-Copy"></div>
+            <div class="Rectangle-12-Copy-4"></div>
+            <div class="Rectangle-12-Copy-2"></div>
+            <div class="Rectangle-12-Copy-5"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="data">
+          <div class="demo">
+            <div class="add">
+              Facilities Management - Market Size Estimate - Europe, North
+              America and MEA
+            </div>
+          </div>
+          <div class="bars">
+            <div class="Rectangle-12"></div>
+            <div class="Rectangle-12-Copy-3"></div>
+            <div class="Rectangle-12-Copy"></div>
+            <div class="Rectangle-12-Copy-4"></div>
+            <div class="Rectangle-12-Copy-2"></div>
+            <div class="Rectangle-12-Copy-5"></div>
+          </div>
+        </div>
+        <div class="data">
+          <div class="demo">
+            <div class="add">
+              La Nina to have a positive impact on key Indian crop.
+            </div>
+          </div>
+          <div class="bars" style="margin-left: 0; justify-content: center">
+            <img src="../assets/images/Capture.PNG" height="192px" alt="" />
+          </div>
+        </div>
+        <div class="data">
+          <div class="demo">
+            <div class="add">
+              Facilities Management - Market Size Estimate - Europe, North
+              America and MEA
+            </div>
+          </div>
+          <div class="bars">
+            <div class="Rectangle-12"></div>
+            <div class="Rectangle-12-Copy-3"></div>
+            <div class="Rectangle-12-Copy"></div>
+            <div class="Rectangle-12-Copy-4"></div>
+            <div class="Rectangle-12-Copy-2"></div>
+            <div class="Rectangle-12-Copy-5"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="data">
+          <img src="../assets/images/add-index.svg" class="indices" alt="" />
+        </div>
+        <div class="data">
+          <div class="demo">
+            <div class="add">
+              Facilities Management - Market Size Estimate - Europe, North
+              America and MEA
+            </div>
+          </div>
+          <div class="bars">
+            <div class="Rectangle-12"></div>
+            <div class="Rectangle-12-Copy-3"></div>
+            <div class="Rectangle-12-Copy"></div>
+            <div class="Rectangle-12-Copy-4"></div>
+            <div class="Rectangle-12-Copy-2"></div>
+            <div class="Rectangle-12-Copy-5"></div>
+          </div>
+        </div>
+        <div class="data">
+          <img src="../assets/images/add-index.svg" class="indices" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div>
+        <img class="lessthan" src="../assets/images/chevron.svg" onclick="plusSlides(-1)" />
+      </div>
+      <div class="dot" onclick="currentSlide(1)"></div>
+      <div class="dot" onclick="currentSlide(2)"></div>
+      <div class="dot" onclick="currentSlide(3)"></div>
+      <div class="greaterthan" style="margin-left: 0.5em; cursor: pointer">
+        <img src="../assets/images/chevron.svg" onclick="plusSlides(1)" />
+      </div>
+    </div>
+
+    <div class="section4">
+      <div class="block">
+        <p>BLOG</p>
+        <img class="city2" src="../assets/images/city.jpeg" width="370px" height="250px" alt="" />
+        <p>La Nina to have a positive impact on key Indian crop.</p>
+        <div class="date">
+          <p>Sunil Shah | 2 August 2016</p>
+        </div>
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          tincidunt velit sit amet tortor ullamcorper venenatis. Pellentesque
+          congue dapibus element.
+        </div>
+        <div class="icons2">
+          <img class="greystar" style="cursor: pointer" src="../assets/images/grey-star.svg" alt="" />
+          <p>5 |</p>
+          <img class="discussions" src="../assets/images/discussions.svg" alt="" />
+          <p>15K |</p>
+          <img class="download" src="../assets/images/download-icon.svg" alt="" />
+        </div>
+        <div class="extra">
+          <p><u>More</u></p>
+          <img class="chevron" src="../assets/images/chevron.svg" alt="" />
+        </div>
+      </div>
+      <div class="block">
+        <p>BLOG</p>
+        <img class="city2" src="../assets/images/city.jpeg" width="370px" height="250px" alt="" />
+        <p>La Nina to have a positive impact on key Indian crop.</p>
+        <div class="date">
+          <p>Sunil Shah | 2 August 2016</p>
+        </div>
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          tincidunt velit sit amet tortor ullamcorper venenatis. Pellentesque
+          congue dapibus element.
+        </div>
+        <div class="icons2">
+          <img class="greystar" style="cursor: pointer" src="../assets/images/grey-star.svg" alt="" />
+          <p>5 |</p>
+          <img class="discussions" src="../assets/images/discussions.svg" alt="" />
+          <p>15K |</p>
+          <img class="download" src="../assets/images/download-icon.svg" alt="" />
+        </div>
+        <div class="extra">
+          <p><u>More</u></p>
+          <img class="chevron" src="../assets/images/chevron.svg" alt="" />
+        </div>
+      </div>
+      <div class="block">
+        <p>BLOG</p>
+        <img class="city2" src="../assets/images/city.jpeg" width="370px" height="250px" alt="" />
+        <p>La Nina to have a positive impact on key Indian crop.</p>
+        <div class="date">
+          <p>Sunil Shah | 2 August 2016</p>
+        </div>
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          tincidunt velit sit amet tortor ullamcorper venenatis. Pellentesque
+          congue dapibus element.Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Mauris tincidunt velit sit amet tortor ullamcorper
+          venenatis. Pellentesque congue dapibus element.
+        </div>
+        <div class="icons2">
+          <img class="greystar" style="cursor: pointer" src="../assets/images/grey-star.svg" alt="" />
+          <p>5 |</p>
+          <img class="discussions" src="../assets/images/discussions.svg" alt="" />
+          <p>15K |</p>
+          <img class="download" src="../assets/images/download-icon.svg" alt="" />
+        </div>
+        <div class="extra">
+          <p><u>More</u></p>
+          <img class="chevron" src="../assets/images/chevron.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="foot"></div>
+  </footer>
+
+  <script src="../js/function.js"></script>
+</body>
+
+</html>
